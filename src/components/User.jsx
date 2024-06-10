@@ -8,9 +8,9 @@ function User({ users }) {
       <div className="flex flex-col items-center">
         <ChangePageButton />
         {users.length === 0 ? (
-          <p className="text-lg font-semibold mt-4">No data available</p>
+          <p className="text-lg font-semibold mt-[84px]">No data available</p>
         ) : (
-          <table className="w-auto mt-4 border-collapse border-2 border-black bg-pink-300">
+          <table className="w-auto mt-[84px] border-collapse border-2 border-black bg-pink-300">
             <thead className="border-2 border-black">
               <tr className="border-2 border-black">
                 <th className="w-[200px] border-2 border-black">Name</th>

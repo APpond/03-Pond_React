@@ -4,13 +4,13 @@ import NavHomeOwner from "./components/NavHomeOwner";
 import Owner from "./components/Owner";
 import Admin from "./components/Admin";
 import User from "./components/User";
-import NavUserAdmin from "./components/ChangePageButton";
+import ChangePageButton from "./ChangePageButton";
 
 function App() {
   const [users, setUsers] = useState([]);
 
   const addUser = (newUser) => {
-    setUsers([...users, { ...newUser, id: `n${users.length + 1}` }]);
+    setUsers([...users, { ...newUser, id: `${users.length + 1}` }]);
   };
 
   const router = createBrowserRouter([
@@ -24,7 +24,7 @@ function App() {
               Generation Thailand
             </h1>
             <h3 className="font-bold text-4xl mb-3">React - Assessment</h3>
-            <NavUserAdmin />
+            <ChangePageButton />
           </div>
         </div>
       ),
