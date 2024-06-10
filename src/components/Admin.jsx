@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ChangePageButton from "./ChangePageButton";
+import UserAdminBotton from "./UserAdminBotton";
 
 function Admin({ users, addUser, setUsers }) {
   const [name, setName] = useState("");
@@ -33,7 +33,7 @@ function Admin({ users, addUser, setUsers }) {
     <div className="flex flex-col items-center">
       <h3 className="font-bold text-4xl mb-3">Home - Admin Sector</h3>
       <div className="flex flex-col items-center w-full">
-        <ChangePageButton />
+        <UserAdminBotton />
         <div className="flex flex-col justify-start mt-6 w-full max-w-4xl">
           <p className="text-lg font-semibold">Create User Here</p>
           <form onSubmit={handleSubmit} className="flex gap-3 mt-3 w-full">

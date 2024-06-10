@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ChangePageButton() {
+function UserAdminBotton() {
   return (
     <div className="flex gap-20 mt-6">
       <Link
@@ -20,5 +20,5 @@ function ChangePageButton() {
   );
 }
 
-export default ChangePageButton;
+export default UserAdminBotton;
 

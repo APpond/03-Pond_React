@@ -4,7 +4,7 @@ import NavHomeOwner from "./components/NavHomeOwner";
 import Owner from "./components/Owner";
 import Admin from "./components/Admin";
 import User from "./components/User";
-import ChangePageButton from "./ChangePageButton";
+import UserAdminBotton from "./components/UserAdminBotton";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -24,7 +24,7 @@ function App() {
               Generation Thailand
             </h1>
             <h3 className="font-bold text-4xl mb-3">React - Assessment</h3>
-            <ChangePageButton />
+            <UserAdminBotton />
           </div>
         </div>
       ),

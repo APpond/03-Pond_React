@@ -1,12 +1,12 @@
 import React from "react";
-import ChangePageButton from "./ChangePageButton";
+import UserAdminBotton from "./UserAdminBotton";
 
 function User({ users }) {
   return (
     <div className="flex flex-col items-center">
       <h3 className="font-bold text-4xl mb-3">Home - User Sector</h3>
       <div className="flex flex-col items-center">
-        <ChangePageButton />
+        <UserAdminBotton />
         {users.length === 0 ? (
           <p className="text-lg font-semibold mt-[84px]">No data available</p>
         ) : (
